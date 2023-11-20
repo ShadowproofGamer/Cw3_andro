@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fr2_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Fragment2">
+    tools:context=".FragmentLeft">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/fr2_txt"
-        android:layout_width="wrap_content"
+        android:id="@+id/left_txt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/fragment2" />
-
-    <SeekBar
-        android:id="@+id/seekBar2"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content" />
+        android:text="@string/fragmentL" />
 
     <Button
-        android:id="@+id/button_fr2"
+        android:id="@+id/buttonL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Cw3_andro</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment1">Fragment1</string>
     <string name="fragment2">Fragment2</string>
@@ -9,4 +8,39 @@
     <string name="op1">Option 1</string>
     <string name="op2">Option 2</string>
     <string name="results">Here data/results</string>
+    <string name="fragmentL">Fragment LEFT</string>
+    <string name="fragmentR">Fragment RIGHT</string>
+    <string name="menuL">Left fragment</string>
+    <string name="menuR">Right fragment</string>
+    <string name="menuC">Center fragment</string>
+
+
+
+    <string name="changer1_str">Czerwony Theme</string>
+    <string name="changer2_str">Zielony Theme</string>
+    <string name="changer3_str">Brązowy Theme</string>
+    <string name="changer0_str">Domyślny Theme</string>
+    <string name="buttonToLeft_str">Lewa aktywność</string>
+    <string name="buttonToRight_str">Prawa aktywność</string>
+    <string name="button_size">Wielkość Fontu</string>
+    <string name="button_type">Typ Fontu</string>
+    <string name="button_other">inne</string>
+    <string name="ch_size1">Rozmiar 20</string>
+    <string name="ch_size2">Rozmiar 22</string>
+    <string name="ch_size3">Rozmiar 24</string>
+    <string name="ch_type1">normal</string>
+    <string name="ch_type2">Italic</string>
+    <string name="ch_type3">Bold</string>
+    <string name="con_ch1">czerwone</string>
+    <string name="con_ch2">zielone</string>
+    <string name="con_ch3">brązowe</string>
+    <string name="pers_data">Własne dane</string>
+    <string name="pref_color">Preferowany kolor</string>
+    <string name="con_color">Kolor</string>
+    <string name="con_br">Data Urodzenia</string>
+    <string name="con_br_date">dd-mm-yyyy</string>
+    <string name="back_button">Back</string>
+    <string name="poor">Poor</string>
+    <string name="moderate">Moderate</string>
+    <string name="good">Good</string>
 </resources>

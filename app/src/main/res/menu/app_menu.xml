@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Reset"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi0"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="@string/changer0_str"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mi1"
+        android:icon="@drawable/icon_red"
+        android:title="@string/changer1_str" />
+    <item
+        android:id="@+id/mi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_green"
+        android:title="@string/changer2_str" />
+    <item
+        android:id="@+id/mi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_brown"
+        android:title="@string/changer3_str" />
+</menu>
