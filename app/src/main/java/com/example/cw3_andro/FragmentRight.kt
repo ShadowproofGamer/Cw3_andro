@@ -37,13 +37,6 @@ class FragmentRight : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    private var myAM: ActionMode? = null
-    lateinit var conColor1: TextView
-    lateinit var conPref1: TextView
-    lateinit var conBirth: TextView
-    lateinit var conBirthDate: TextView
-    lateinit var toolbar1: androidx.appcompat.widget.Toolbar
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,6 +53,9 @@ class FragmentRight : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_right, container, false)
+
+
+
     }
 
     companion object {
