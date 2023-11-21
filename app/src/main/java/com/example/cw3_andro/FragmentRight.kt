@@ -140,73 +140,7 @@ class FragmentRight : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_right, container, false)
 
-
-
     }
-/*
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val binding = FragmentRightBinding.inflate(layoutInflater)
-        requireActivity().setContentView(binding.root)
-
-
-        conColor1 = binding.conColor1
-        conPref1 = binding.conPref1
-
-        conColor1.setOnLongClickListener(View.OnLongClickListener { view ->
-            if (myAM != null) {
-                return@OnLongClickListener false
-            }
-            val toolbar = (requireActivity().findViewById<View>(R.id.toolbar1) as androidx.appcompat.widget.Toolbar)
-            myAM = toolbar.startActionMode(myAMCallback)
-            view.isSelected = true
-            true
-        })
-
-        applyBGColor()
-
-        conBirth = binding.conBr
-        conBirthDate = binding.conBrDate
-        applyDateText()
-        conBirthDate.setOnClickListener { _ ->
-            val cal = Calendar.getInstance()
-            val year = cal.get(Calendar.YEAR)
-            val month = cal.get(Calendar.MONTH)
-            val day = cal.get(Calendar.DAY_OF_MONTH)
-            val dateDialog = DatePickerDialog(
-                requireActivity(),
-                {view, year, monthOfYear, dayOfMonth ->
-                    val currCal = Calendar.getInstance()
-                    currCal.set(year, monthOfYear, dayOfMonth)
-                    var tempDate = (dayOfMonth.toString() + "-" + (monthOfYear+1) + "-" + year)
-                    conBirthDate.text = tempDate
-                    setPrefDate(tempDate)
-                },
-                year,
-                month,
-                day
-            ).show()
-        }
-
-        val backButton: Button? = binding.backButton
-        backButton!!.setOnClickListener { _ ->
-            val builder: AlertDialog.Builder = AlertDialog.Builder(requireActivity())
-            builder
-                .setTitle("Go Back Dialog")
-                .setMessage("Are you sure at 100% ?")
-                //.setSingleChoiceItems()
-                .setPositiveButton("Accept") { dialog, which ->
-                    requireActivity().onBackPressed()
-                }.setNegativeButton("Cancel") { dialog, which ->
-                    dialog.cancel()
-                }.create().show()
-        }
-
-    }
-
- */
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

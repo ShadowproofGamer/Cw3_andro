@@ -3,9 +3,12 @@
     <style name="Base.Theme.Cw3_andro" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="windowActionModeOverlay">true</item>
     </style>
 
-    <style name="Theme.Cw3_andro" parent="Base.Theme.Cw3_andro" />
+    <style name="Theme.Cw3_andro" parent="Base.Theme.Cw3_andro" >
+        <item name="windowActionModeOverlay">true</item>
+    </style>
 
     <style name="AppThemeGreen" parent="Theme.Material3.Light.NoActionBar">
         <item name="windowActionModeOverlay">true</item>

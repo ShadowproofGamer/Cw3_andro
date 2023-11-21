@@ -10,44 +10,47 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="320dp"
+        android:text="@string/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_br_date" />
+
+    <TextView
+        android:id="@+id/con_color1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/con_color"
+        app:layout_constraintStart_toEndOf="@+id/con_pref1"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="111dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="162dp"
         android:text="@string/pers_data"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/back_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/con_br_date" />
-
-    <TextView
-        android:id="@+id/con_br"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="56dp"
-        android:text="@string/con_br"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/con_pref1" />
 
     <TextView
         android:id="@+id/con_br_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="86dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
         android:hint="@string/con_br_date"
         app:layout_constraintStart_toEndOf="@+id/con_br"
         app:layout_constraintTop_toBottomOf="@+id/con_color1" />
@@ -56,21 +59,21 @@
         android:id="@+id/con_pref1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="30dp"
         android:text="@string/pref_color"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/con_color1"
+        android:id="@+id/con_br"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="212dp"
-        android:text="@string/con_color"
-        app:layout_constraintStart_toEndOf="@+id/con_pref1"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/con_br"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_pref1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
