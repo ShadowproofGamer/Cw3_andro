@@ -13,7 +13,10 @@
     <string name="menuL">Left fragment</string>
     <string name="menuR">Right fragment</string>
     <string name="menuC">Center fragment</string>
-
+    <string name="fragmentE">Change the title:</string>
+    <string name="editE">Change title</string>
+    <string name="editButton">Edit</string>
+    <string name="buttonE">Sent</string>
 
 
     <string name="changer1_str">Czerwony Theme</string>
@@ -43,4 +46,6 @@
     <string name="poor">Poor</string>
     <string name="moderate">Moderate</string>
     <string name="good">Good</string>
+
+    <string name="newOpt">OptionX</string>
 </resources>

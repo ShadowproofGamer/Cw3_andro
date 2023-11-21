@@ -15,12 +15,16 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.graphics.Typeface
+import android.view.ContextMenu
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.Toast
 import android.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
@@ -187,8 +191,8 @@ class FragmentRight : Fragment() {
             ).show()
         }
 
-        val backButton: Button? = (requireActivity().findViewById<View>(R.id.back_button) as Button)
-        backButton!!.setOnClickListener { _ ->
+        val backButton: Button = (requireActivity().findViewById<View>(R.id.back_button) as Button)
+        backButton.setOnClickListener { _ ->
             val builder: AlertDialog.Builder = AlertDialog.Builder(requireActivity())
             builder
                 .setTitle("Go Back Dialog")
@@ -201,6 +205,37 @@ class FragmentRight : Fragment() {
                 }.create().show()
         }
 
+
+        //mod 1
+        val editButton = (requireActivity().findViewById<View>(R.id.editButton) as Button)
+        editButton.setOnClickListener { _ ->
+            findNavController().navigate(R.id.action_right_frag_to_fragmentExtra)
+        }
+
+        //to dodać dane (mod2)
+        val titleR = (requireActivity().findViewById<View>(R.id.title1) as TextView)
+        parentFragmentManager.setFragmentResultListener("childFragmentData", viewLifecycleOwner){string, bundle ->
+            titleR.setText(bundle.getString("title", R.string.pers_data.toString()))
+            //requireActivity().recreate()
+        }
+
+        //mod3
+        setHasOptionsMenu(true)
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.right_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.newopt -> {
+                Toast.makeText(requireActivity(), "new option clicked!", Toast.LENGTH_SHORT).show()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     companion object {

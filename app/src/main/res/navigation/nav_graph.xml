@@ -19,7 +19,11 @@
         android:id="@+id/right_frag"
         android:name="com.example.cw3_andro.FragmentRight"
         android:label="fragment_right"
-        tools:layout="@layout/fragment_right" />
+        tools:layout="@layout/fragment_right" >
+        <action
+            android:id="@+id/action_right_frag_to_fragmentExtra"
+            app:destination="@id/fragmentExtra" />
+    </fragment>
 
     <action
         android:id="@+id/action_to_left_fragment"
@@ -41,4 +45,9 @@
         app:launchSingleTop="true"
         app:popUpTo="@id/center_frag"
         />
+    <fragment
+        android:id="@+id/fragmentExtra"
+        android:name="com.example.cw3_andro.FragmentExtra"
+        android:label="fragment_extra"
+        tools:layout="@layout/fragment_extra" />
 </navigation>
